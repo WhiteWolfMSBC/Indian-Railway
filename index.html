@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Indian Railway Passenger Reservation Enquiry</title>
+</head>
+
+
+<!-- Bootstrap -->
+
+<!-- CSS bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+<!-- FavIcon -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="FavIcons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="FavIcons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="FavIcons/favicon-16x16.png">
+<link rel="manifest" href="FavIcons/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Css -->
+
+<link rel="stylesheet" href="index.css">
+
+<!-- Js -->
+
+<!-- <script src="index.js"></script> -->
+
+<body>
+
+
+    <!-- NavBar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h5 class="text-light">Indian Railways</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Train Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reserved Train Between Stations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Train Information
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fare Enquiry</a></li>
+                            <li><a class="dropdown-item" href="#">Seat Avalability</a></li>
+                            <li><a class="dropdown-item" href="#">Fare Enquiry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Launch static backdrop modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="staticBackdropLabel">Registration form</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+
+                                    <!-- Registration Form -->
+
+                                    <div class="Form-container container-xxl">
+                                        <form id="registrationform">
+                                            <div class="form-container_row row">
+                                                <div class="form-container_col col-xl-2"></div>
+                                                <div class="form-container_col1 col-xl-8">
+
+                                                    <div class="form-container_col_row row mt-4">
+                                                        <div class="form-container_col2 col-lg-6">
+                                                            <label class="text-dark" for=""><b>First Name :-</b><span
+                                                                    class="text-danger">*</span></label>
+                                                            <input type="text" placeholder="FirstName" id="FirstName"
+                                                                required class="form-control mt-2">
+
+                                                            <br><br>
+
+                                                            <label class="text-dark" for=""><b>DOB :-</b><span
+                                                                    class="text-danger">*</span></label>
+                                                            <input type="date" placeholder="Date Of Birth" id="Dob"
+                                                                required class="form-control mt-2">
+
+                                                            <br><br>
+
+                                                            <label class="text-dark" for=""><b>Gender :-</b><span
+                                                                    class="text-danger">*</span></label> <br>
+                                                            <div class="form-check ms-5">
+                                                                <input class="form-check-input" type="radio" id="male"
+                                                                    required name="gender" id="male">
+                                                                <label class="form-check-label text-dark" for="male">
+                                                                    Male
+                                                                </label>
+
+                                                                <br>
+
+                                                                <input class="form-check-input" type="radio" id="female"
+                                                                    required name="gender" id="female">
+                                                                <label class="form-check-label text-dark" for="female">
+                                                                    Female
+                                                                </label>
+                                                            </div>
+
+                                                            <br>
+
+
+
+                                                        </div>
+
+                                                        <div class="form-container_col2 col-lg-6">
+                                                            <label class="text-dark" for=""><b>Last Name :-</b><span
+                                                                    class="text-danger">*</span></label>
+                                                            <input type="text" placeholder="LastName" id="lastname"
+                                                                required class="form-control mt-2">
+
+                                                            <br><br>
+
+                                                            <label class="text-dark" for=""><b>Email Id :-</b><span
+                                                                    class="text-danger">*</span></label>
+                                                            <input type="email" placeholder="Enter Your Email Id"
+                                                                id="email" required class="form-control mt-2">
+
+                                                            <br><br>
+
+                                                            <label class="text-dark" for=""><b>Contact NO :-</b><span
+                                                                    class="text-danger">*</span></label>
+                                                            <input type="tel" placeholder="Enter Your Contact Details"
+                                                                id="contact" required class="form-control mt-2">
+
+                                                            <br>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-container_col col-xl-2"></div>
+
+                                                <button type="submit"
+                                                    class="btn mb-1 px-5 ms-2 btn-warning">Submit</button>
+
+                                                <button class="btn btn-danger mb-1 px-5 ms-2"
+                                                    onclick="reset()">Reset</button>
+
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Head Section -->
+
+
+    <div class="head-container container-xl container-lg container-md container-sm container-xs">
+
+        <div class="head-container_row row">
+            <div class="head-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <img src="Images/1.gif" class="head-section_img img-fluid" alt="">
+            </div>
+
+            <div class="head-container_col col-xl-6 col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                <h1 class="head-container_txt">INDIAN RAILWAYS PASSENGER RESERVATION ENQUIRY</h1>
+            </div>
+
+            <div class="head-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                <img src="Images/2.gif" class="head-section_img img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Marquee Section -->
+
+    <div class="marquee-container container-xl container-lg container-md container-sm container-xs mt-1">
+        <marquee direction="left">Please help Indian railways and government of India in moving towards a digitized and
+            cashless economy. Eradicate black money.</marquee>
+    </div>
+
+
+    <!-- image Section -->
+
+
+    <div class="image-container container-xl container-lg container-md container-sm container-xs mt-1">
+        <div class="head-container_row row">
+            <div class="head-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            </div>
+
+            <div class="head-container_col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img src="Images/3.jpg" class="image-container img-fluid" alt="">
+            </div>
+
+            <div class="head-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Text & Marquee Section -->
+
+    <div class="Tmarquee-container container-xl container-lg container-md container-sm container-xs mt-1">
+        <p class="Tmarquee-container_txt"><a href="https://www.indianrail.gov.in/StaticContents/acc_chart.html">Train
+                Accident Chart (Train No/Name: 15633/BKN GHY EXPRESS, From/To: BIKANER JN/GUWAHATI )</a></p>
+
+
+        <marquee behavior="" direction="left">
+            <span class="Tmarquee-container_span">Contribute your rendering of the National Anthem of India at :
+                https://rashtragaan.in/</span>
+            COVID-19 Appropriate behaviour - Wear Mask, Physical Distancing, Maintain Hand Hygiene - Indian Railways
+            <span class="Tmarquee-container_span">COVID19 Parcel Special Trains For Parcel Freight click here, then from
+                Booking menu, click Online Parcel Book</span>
+        </marquee>
+    </div>
+
+
+
+
+    <!-- Card Section -->
+
+
+    <div class="Card-container container-xl container-lg container-md container-sm container-xs mt-4">
+
+        <div class="card-container_row row">
+            <div class="card-container_row row">
+                <div class="card-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                </div>
+
+                <div class="card-container_col col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+
+                    <div
+                        class="Card-container1 container-fluid container-xl container-lg container-md container-sm container-xs mt-1">
+                        <img src="Images/4.jpg" class="Card-container_img img-fluid" alt="...">
+                        <div class="card-container_row1 row">
+
+                            <div class="card-container-row1_col col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-122">
+                                <h5 class="card-container_cardtitle card-title mt-2">Experience Our Service...</h5>
+                            </div>
+
+                            <div class="card-container-row1_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12 ">
+                            </div>
+
+                            <div class="card-container-row1_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                <img src="Images/5.gif" class="Card-container_img img-fluid mt-1" alt="">
+                            </div>
+                        </div>
+
+                        <p class="card-text mt-2">
+                            India has some of the most spectacular and unforgettable rail journeys in the world.
+                            Here you experience a simple way to find out everything you need to know in one easy
+                            place. There's no better way to enjoy India's outback, cities, coastal towns and
+                            regional areas in comfort.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Video section -->
+
+
+    <div class="Video-container container-xl container-lg container-md container-sm container-xs mt-5">
+        <div class="Video-container_row row">
+            <div class="Video-container_col col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12">
+            </div>
+
+            <div class="Video-container_col col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                <video class="video-container_video" width="400"
+                    src="Video/IRCTC's Bharat Gaurav Tourist Train __ Sri Ramayana Yatra __ Pamban Bridge.mp4"
+                    controls></video>
+            </div>
+
+            <div class="Video-container_col col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer Image Section -->
+
+    <div class="footerImage-container container-xl container-lg container-md container-sm container-xs mt-5">
+        <div class="footerImage-container_row row">
+            <div class="footerImage-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            </div>
+
+            <div class="footerImage-container_col col-xl-6 col-lg-6 col-md-5 col-sm-12 col-xs-12">
+                <img src="Images/6.jpg" class="footerImage-container_img img-fluid mt-1" alt="">
+            </div>
+
+            <div class="footerImage-container_col col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer Section -->
+
+    <div class="footer-container container-xl container-lg container-md container-sm container-xs mt-5">
+        <div class="footer-container_row row">
+            <div class="footer-container_col col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12">
+            </div>
+
+            <div class="footer-container_col col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                <p class="footer-container_txt">Copyright © 2017, Centre For Railway Information Systems, Designed and
+                    Hosted by CRIS</p>
+            </div>
+
+            <div class="footer-container_col col-xl-4 col-lg-4 col-md-3 col-sm-12 col-xs-12">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
